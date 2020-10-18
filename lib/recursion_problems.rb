@@ -34,11 +34,21 @@ p num_occur([1,3,4,5], 2) # => 0
 # Problem 4: 
 
 def add_to_twelve?(array)
+    return false if array.length == 1 && array[0] != 12
+    array[0] == 12 ? true : array[0] + array[1] == 12 ? true : add_to_twelve?(array.drop(1))
 end
+
+p add_to_twelve?([1,2,3]) # => false
+p add_to_twelve?([1,2,3,9]) # => true
+p add_to_twelve?([4,8,5,6,7]) # => true
+p add_to_twelve?([8]) # => false
+p add_to_twelve?([8,4]) # => true
+p add_to_twelve?([12])  # => true
 
 # Problem 5: 
 
 def sorted?(array)
+    
 end
 
 # Problem 6: 
