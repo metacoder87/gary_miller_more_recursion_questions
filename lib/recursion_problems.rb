@@ -63,4 +63,11 @@ puts "              #{sorted?([1,0,3])}" # => false
 puts "Problem 6:" 
 
 def reverse(string)
+    return string if string.length == 1
+    string[-1] + reverse(string.chop)
 end
+
+puts "              #{reverse("string")}" # => gnirts
+puts "              #{reverse("texas")}" # => saxet
+puts "              #{reverse("san fran")}" # => narf nas
+puts "              #{reverse("austin")}" # => nitsua
