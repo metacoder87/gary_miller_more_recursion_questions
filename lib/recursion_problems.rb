@@ -20,10 +20,16 @@ p includes?([1,2,3,4,5], 4) # => true
 p includes?([1,2,3,4,5], 3) # => true
 p includes?([1,2,3,4,5], 8) # => false
 
-# Problem 3: 
+# Problem 3:  
 
-def num_occur(array, target)
+def num_occur(array, target, count = 0)
+    return count if array.count == 0
+    array.first == target ? num_occur(array.drop(1), target, count += 1) : num_occur(array.drop(1), target, count)
 end
+
+p num_occur([1,2,3,4,5], 2) # => 1
+p num_occur([1,2,2,3,4], 2) # => 2
+p num_occur([1,3,4,5], 2) # => 0
 
 # Problem 4: 
 
