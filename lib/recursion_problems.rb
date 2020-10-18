@@ -1,3 +1,8 @@
+            # meta_coder (Gary Miller) =)
+            # gmiller052611@gmail.com
+            # https://github.com/metacoder87/gary_miller_more_recursion_questions/blob/master/lib/recursion_problems.rb
+
+
 puts "Problem 1:"
 
 def sum_recur(array)
@@ -71,3 +76,8 @@ puts "              #{reverse("string")}" # => gnirts
 puts "              #{reverse("texas")}" # => saxet
 puts "              #{reverse("san fran")}" # => narf nas
 puts "              #{reverse("austin")}" # => nitsua
+
+
+            # meta_coder (Gary Miller) =)
+            # gmiller052611@gmail.com
+            # https://github.com/metacoder87/gary_miller_more_recursion_questions/blob/master/lib/recursion_problems.rb
